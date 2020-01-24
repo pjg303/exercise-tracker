@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<p> I have come to talk with youu again</p>
+{% endblock %}
+{%block sidebar%}
+    {% for item in sidebar %}
+        <li class="list-group-item list-group-item-light">
+            <a class="nav-item nav-link" href="{{ url_for(item) }}">{{ item }}</a>
+        </li>
+    {% endfor %}
+{% endblock %}
